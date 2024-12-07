@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 
 class regis extends StatefulWidget {
   @override
-  _regisState createState() =>
-      _regisState();
+  _regisState createState() => _regisState();
 }
 
 class _regisState extends State<regis> {
@@ -140,7 +139,8 @@ class _regisState extends State<regis> {
                         items: genderOptions.map((gender) {
                           return DropdownMenuItem<String>(
                             value: gender,
-                            child: Text(gender, style: TextStyle(color: Colors.black)),
+                            child: Text(gender,
+                                style: TextStyle(color: Colors.black)),
                           );
                         }).toList(),
                         onChanged: (value) {
@@ -167,7 +167,8 @@ class _regisState extends State<regis> {
                         items: positionOptions.map((position) {
                           return DropdownMenuItem<String>(
                             value: position,
-                            child: Text(position, style: TextStyle(color: Colors.black)),
+                            child: Text(position,
+                                style: TextStyle(color: Colors.black)),
                           );
                         }).toList(),
                         onChanged: (value) {
